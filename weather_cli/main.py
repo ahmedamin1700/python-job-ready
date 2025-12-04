@@ -1,11 +1,18 @@
 import os
 from dotenv import load_dotenv
+from api_clients import CurrencyClient, WeatherClient
 
 load_dotenv()
 
 
 def main():
-    print(f"Key loaded: {os.getenv("WEATHER_API_KEY")}")
+    weather = WeatherClient()
+    data = weather.get_weather("Cairo")
+
+    currency = CurrencyClient()
+    amount = currency.convert(100.0, "USD", "EGP")
+
+    print(amount)
 
 
 if __name__ == "__main__":

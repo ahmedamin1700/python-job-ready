@@ -1,0 +1,16 @@
+{
+    "cairo": {
+        "timestamp": 1765197344.8883102,
+        "data": {
+            "temp": 20.8,
+            "windspeed": 16.0
+        }
+    },
+    "roma": {
+        "timestamp": 1765197394.0620558,
+        "data": {
+            "temp": 14.9,
+            "windspeed": 3.2
+        }
+    }
+}
